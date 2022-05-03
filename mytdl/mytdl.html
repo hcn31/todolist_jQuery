@@ -1,0 +1,44 @@
+<html lang="en" >
+   <head>
+      <title>Todost</title>
+      <meta name="viewport" content="height=device-height, initial-scale=1, user-scalable=no">
+      <meta charset="UTF-8">
+      <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css'>
+      <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+      <link rel="stylesheet" href="style.css">
+   </head>
+<body class="body">  
+   <center>
+      <h1 style="color:white"> <p style="font-family:Apple Chancery, cursive;color: rgb(184, 45, 27);">MY</p> To Do List</h1>
+      <h4 class="today"></h4>
+         <div class="container">
+            <h4 class="quotes"></h4>
+          
+                  <div class="add-control">
+                     <div class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="Add item..."/>
+                        <i class="fa fa-plus form-control-feedback add-btn"></i>
+                     </div>
+                  </div>
+                  
+                  <span id="bar"style=" color:white" ></span>
+                  <span id="choice">
+                  <label id="filt" >Filter</label>
+                  <select class="custom-select custom-select-sm btn my-2" selected="all" id="choix" onchange="test()">
+                     
+                     <option value="all" selected>All</option>
+                      <option value="done">Completed</option>
+                      <option value="new">Not Done</option>
+                  </select>
+               </span>
+                    <ul class="todo-list">
+                  </ul>
+                 </div>
+                 <h3 style="font-family:Trattatello, fantasy;color:black;">Work smarter <span style="color:red;font-family:Trattatello, fantasy">Not</span> harder</h3>
+      </center>
+         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+         <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+         <script  src="script.js"></script>
+   </body>
+  

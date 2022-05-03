@@ -1,0 +1,96 @@
+.body {
+  background-image: url("1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#num{
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+  padding-top: 50px;
+}
+.todo-list {
+  margin: 20px 0;
+}
+.todo-list li {
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  position: relative;
+  word-break: break-word;
+  width:70%;
+}
+li.danger{
+  text-decoration: line-through;
+  background: rgb(150,240,242);
+  background: rgb(150,240,242);
+  background: radial-gradient(circle, rgba(150,240,242,1) 0%, rgba(210,148,204,0.6169818269104517) 100%);
+}
+
+.todo-list li.danger label .checkbox-mask:after {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+}
+.todo-list li .checkbox {
+  margin: 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+label {
+  display: block;
+}
+#filt{
+  display:inline;
+  color:white; 
+  font-size: medium;
+}
+.checkbox-mask {
+  display: block;
+  border: 2px solid rgb(5, 5, 5);
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  position: absolute;
+  margin-left: -20px;
+  border: 2px solid rgb(0, 47, 255);
+}
+
+.has-feedback .fa {
+  line-height: 35px;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  display: block;
+  color: #666;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+}
+.add-control {
+  margin-top: 20px;
+  position: relative;
+  width:50%;
+ 
+}                       
+input[type="checkbox"] {
+    opacity: 0;
+}
+
+button {     
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;   
+  height: 50px;    
+}
+.form-control{
+  border:2px solid black;
+}
+.form-control:hover{
+  border:3px solid rgb(7, 127, 174);
+}
+h4{
+  color:white;
+}
